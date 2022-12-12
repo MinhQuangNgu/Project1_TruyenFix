@@ -10,7 +10,7 @@ import { store, persistor } from "./redux/store";
 import { Provider } from "react-redux";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "http://api.stphim.xyz/";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Provider store={store}>

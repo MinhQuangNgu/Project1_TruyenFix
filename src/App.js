@@ -3,7 +3,7 @@ import "./App.css";
 import io from "socket.io-client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import { publicRouter } from "./routes/routes";
+import { privateRouter, publicRouter } from "./routes/routes";
 import "./style.css";
 import Loading from "./loading/Loading";
 import { isLogin } from "./redux/slice/auth";
@@ -11,6 +11,7 @@ import jwt_decode from "jwt-decode";
 import Cookies from "js-cookie";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+import NotFound from "./notfound/NotFound";
 export const UserContext = createContext();
 function App() {
     const cache = useRef({});
@@ -23,7 +24,7 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const socket = io("http://localhost:5000");
+        const socket = io("http://api.stphim.xyz/");
         setSocket(socket);
         return () => {
             socket.close();
@@ -54,6 +55,15 @@ function App() {
         return "";
     });
 
+    useEffect(() => {
+        if (auth.user?.accessToken) {
+            const decoded = jwt_decode(auth.user?.accessToken);
+            Cookies.remove("token");
+            Cookies.set("token", decoded?.refreshToken, { expires: 30 });
+            setStore({ rule: decoded.rule });
+        }
+    }, [auth.user?.accessToken]);
+
     return (
         <UserContext.Provider
             value={{ store, setStore, checkToken, cache, socket }}
@@ -61,7 +71,7 @@ function App() {
             <Router>
                 <div className="App">
                     <Routes>
-                        {publicRouter?.map((item, index) => {
+                        {privateRouter?.map((item, index) => {
                             const Page = item.element;
                             return item.defaultlayout ? (
                                 <Route
@@ -81,6 +91,27 @@ function App() {
                                 />
                             );
                         })}
+                        {publicRouter?.map((item, index) => {
+                            const Page = item.element;
+                            return item.defaultlayout ? (
+                                <Route
+                                    key={index + "routerpublic"}
+                                    path={item.path}
+                                    element={
+                                        <item.defaultlayout>
+                                            <Page />
+                                        </item.defaultlayout>
+                                    }
+                                />
+                            ) : (
+                                <Route
+                                    key={index + "routerpublic"}
+                                    path={item.path}
+                                    element={<Page />}
+                                />
+                            );
+                        })}
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>
                 <div className="app-pc">

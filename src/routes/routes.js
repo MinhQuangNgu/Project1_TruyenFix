@@ -1,3 +1,7 @@
+import AdminHome from "../admin/AdminHome";
+import Chapter from "../admin/Chapter";
+import ReportManager from "../admin/ReportManager";
+import Update from "../admin/Update";
 import ActiveAccount from "../auth/ActiveAccount";
 import ActiveForgotPassword from "../auth/ActiveForgotPassword";
 import ChangePassword from "../auth/ChangePassword";
@@ -12,7 +16,40 @@ import UserProfile from "../userManager/UserProfile";
 import UserFollow from "../userRead/UserFollow";
 import UserRead from "../userRead/UserRead";
 import MovieWatch from "../watching/MovieWatch";
-
+import AdminUserMa from "../admin/AdminUserMa";
+import Create from "../admin/Create";
+export const privateRouter = [
+    {
+        element: AdminHome,
+        path: "/admin/manager",
+        defaultlayout: DefaultLayout,
+    },
+    {
+        element: ReportManager,
+        path: "/report/manager",
+        defaultlayout: DefaultLayout,
+    },
+    {
+        element: AdminUserMa,
+        path: "/admin/user/manager",
+        defaultlayout: DefaultLayout,
+    },
+    {
+        element: Create,
+        path: "/admin/create",
+        defaultlayout: DefaultLayout,
+    },
+    {
+        element: Update,
+        path: "/admin/update/:slug",
+        defaultlayout: DefaultLayout,
+    },
+    {
+        element: Chapter,
+        path: "/admin/chapter/:slug",
+        defaultlayout: DefaultLayout,
+    },
+];
 export const publicRouter = [
     { element: Register, path: "/register" },
     { element: Login, path: "/login" },
@@ -57,5 +94,3 @@ export const publicRouter = [
         defaultlayout: DefaultLayout,
     },
 ];
-
-export const privateRouter = [];

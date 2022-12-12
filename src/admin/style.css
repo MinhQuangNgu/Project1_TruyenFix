@@ -1,0 +1,644 @@
+.manager_container{
+    min-height: 100vh;
+}
+.manager_kinds_countries{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.manager_kinds_container{
+    margin-right: 1rem;
+}
+.manager_countries_container,
+.manager_kinds_container{
+    background-color: white;
+    border-radius: 2rem;
+    padding:1rem;
+    margin-bottom:2rem;
+}
+@media screen and (min-width:740px){
+    .manager_countries_container,
+    .manager_kinds_container{
+        flex:1;
+    }
+}
+.manager_kinds_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.manager_kinds_input{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.manager_kinds_input > input{
+    width: 70%;
+    height: 5rem;
+    border-radius: 3rem;
+    padding:0 1.5rem;
+    font-size: 1.3rem;
+}
+.manager_kinds_input > button{
+    width: 20%;
+    margin-left: 2%;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(0, 145, 0,0.8);
+    color:white;
+    font-weight: 500;
+    transition: all ease 0.1s;
+}
+.manager_kinds_input > button:hover{
+    transform: scale(0.9);
+}
+@media only screen and (max-width:739px){
+    .manager_countries_container,
+    .manager_kinds_container{
+        width: 90%;
+        margin-right: 0;
+    }
+}
+.manager_kinds_items_container{
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+    padding:0 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.manager_kinds_items_container > li{
+    padding:0 2rem;
+    height: 5rem;
+    background-color: #FF8A08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    font-weight: 500;
+    color:white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.manager_kinds_items_delete{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    animation: appearing ease 0.3s;
+}
+.manager_kinds_items_container > li:hover .manager_kinds_items_delete{
+    display: flex;
+}
+@keyframes appearing{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.manager_movie_container_title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+.manager_movie_create_container{
+    text-align: center;
+    margin-top: 3rem;
+}
+.manager_movie_create{
+    width: 40%;
+    height: 5rem;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    background-color: #FF8A08;
+    color:white;
+    font-size: 1.8rem;
+    outline: none;
+    border:0.1rem solid white;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+.manager_movie_create:hover{
+    transform: scale(1.08);
+}
+.manager_movie_admin_searching_container{
+    text-align: center;
+    margin-top: 4rem;
+}
+.manager_movie_admin_searching_container > input{
+    width: 50%;
+    height: 5rem;
+    border-radius: 5rem;
+    outline: none;
+    padding:0 1.3rem;
+    font-size: 1.8rem;
+}
+.manager_movie_admin_searching_container > button{
+    margin-left: 1rem;
+    padding:0 1rem;
+    height: 5rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+.manager_movie_admin_searching_container > button:hover{
+    transform: scale(1.08);
+}
+.manager_movie_cards_container{
+    margin-top: 5rem;
+}
+.adminCard_container{
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0,0,0,0.4);
+}
+.adminCard_image_container{
+    width: 100%;
+    height: 85%;
+    position: relative;
+}
+.adminCard_image_container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.adminCard_button_container{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminCard_button_container > button{
+    padding:0 1rem;
+    margin:0 0.5rem;
+    height: 60%;
+    cursor: pointer;
+    outline: none;
+}
+.adminCard_button_container > button:hover{
+    background-color: #FF8A08;
+    color:white;
+    border:0.1rem solid white;
+}
+.adminCard_detail{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    min-height: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,0.4);
+    padding: 0.4rem 0;
+}
+.adminCard_detail > span{
+    color:white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.create_wrap{
+    width: 100%;
+    min-height: 100vh;
+}
+.create_title{
+    margin-top: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.create_form{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.create_form > label{
+    min-width: 15%;
+    font-size: 2.5rem;
+}
+.create_form > textarea{
+    width: 60%;
+    min-height: 6rem;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    outline: none;
+    font-size: 2rem;
+    resize: vertical;
+}
+.create_kinds{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.create_kinds_items{
+    display: flex;
+    align-items: center;
+    margin:0 1.5rem;
+    margin-bottom: 1rem;
+}
+.create_kinds_items > label{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.create_kinds_items > input{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+}
+.create_button{
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.create_button > button{
+    width: 40%;
+    height: 5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    transition: all ease 0.1s;
+}
+.create_button > button:hover{
+    transform: scale(0.9);
+}
+.create_image{
+    display: flex;
+    justify-content: center;
+    margin:3rem 0;
+}
+.movie_drop_zone{
+    width: 25rem;
+    height: 30rem;
+    background-color: white;
+}
+.movie_drop_zone_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    cursor: pointer;
+    position: relative;
+}
+.image_create_container{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.image_create_container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.create_country{
+    display: flex;
+    justify-content: center;
+    margin:3rem 0;
+}
+.create_country > select{
+    width: 20rem;
+    height: 4rem;
+    outline: none;
+    border-radius: 2rem;
+    padding:0 0.5rem;
+}
+.chapter_wrap{
+    margin-top: 5rem;
+    width: 100%;
+}
+.chapter_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.chapter_form{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.chapter_form_container{
+    width: 70%;
+    height: 40rem;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    background-color: white;
+    border:0.1rem solid rgba(0,0,0,0.4);
+    border-radius:1rem;
+    padding:1rem;
+}
+.chapter_form_items{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    border-bottom: 0.05rem solid rgba(0,0,0,0.4);
+    font-size: 1.8rem;
+    padding:0.5rem;
+}
+.chapter_button > button{
+    margin-left: 1rem;
+    padding:0.5rem 1rem;
+    cursor: pointer;
+}
+.chapter_form_items.active{
+    background-color: #FF8A08;
+    color:white;
+}
+.chapter_Card_container{
+    width: 100%;
+    margin-top: 4rem;
+}
+.chapterCard_wrap{
+    width: 100%;
+    min-height: 5rem;
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.chapter_image_container_detail{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.chapter_image_container_detail > img{
+    width: 80%;
+}
+.chapterCard_navbar_container{
+    position: absolute;
+    right:-3rem;
+    top:0rem;
+    width: 12rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem;
+}
+.chapterCard_navbar_items{
+    margin-bottom: 2rem;
+}
+.chapterCard_navbar_items > button{
+    padding:0.5rem 1rem;
+    cursor: pointer;
+}
+.chapterCard_navbar_items:last-child{
+    margin-bottom: 0;
+}
+.chapterCard_navbar_items > button:hover{
+    transform: scale(.9);
+}
+.chapter_card_add{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border:0.1rem solid black;
+    font-size: 1.9rem;
+}
+.chapter_card_add > img{
+    width: 100%;
+}
+.addImg_container{
+    position: fixed;
+    left:2%;
+    top:25%;
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0.5rem black;
+}
+.addImg_wrap{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+.addImg_button{
+    width: 100%;
+    height: 15%;
+    background-color: #FF8A08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.addImg_button > button{
+    width: 80%;
+    height: 60%;
+    cursor: pointer;
+}
+.image_disappear{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.image_disappear > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chatper_button_create{
+    margin:5rem 0;
+    display: flex;
+    justify-content: center;
+}
+.chatper_button_create > button{
+    width: 40%;
+    height: 5rem;
+    background-color: green;
+    color:white;
+    font-size: 1.9rem;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+.chatper_button_create > button:hover{
+    transform: scale(.9);
+}
+.report_wrap{
+    margin-top: 5rem;
+    min-height: 100vh;
+}
+.report_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.report_card_container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.reportCard_container{
+    margin-bottom: 2rem;
+    position: relative;
+    width: 80%;
+    height: 30rem;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0.2rem black;
+    border-radius: 1rem;
+    padding:1rem;
+    display: flex;
+    overflow: hidden;
+}
+.reportCard_from{
+    width: 30%;
+    text-align: center;
+    padding:0 1rem;
+}
+.reportCard_from > img{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.reportCard_from > span{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.report_icons{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.reportCard_to{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reportCard_comment{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,0.1);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+.reportCard_comment_detail{
+    font-size: 1.8rem;
+}
+.report_icons > button{
+    padding:0 0.5rem;
+    height: 3rem;
+    cursor: pointer;
+    color:white;
+    background-color: red;
+    border:none;
+    border-radius: 0.5rem;
+}
+.report_icons > button:hover{
+    transform: scale(0.9);
+}
+.delete_reportCard{
+    position: absolute;
+    top:0.5rem;
+    right:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.admin_user_manager_wrap{
+    margin-top: 5rem;
+    min-height: 100vh;
+}
+.admin_user_manager_title{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.admin_user_manager_cards{
+    margin-top: 2rem;
+}
+.userCard_container{
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0.1rem black;
+    margin-bottom: 2rem;
+    padding:0.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.userCard_image{
+    text-align: center;
+}
+.userCard_image > img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+}
+.userCard_name{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.userCard_email{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color:rgb(86,204,242)
+}
+.userCard_times{
+    position: absolute;
+    top:0.1rem;
+    right:0.8rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
