@@ -1,0 +1,42 @@
+.paginating_container{
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color:white;
+}
+.paginating-items{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0.1rem solid white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.paginating-items:hover,
+.paginating-items-next:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.paginating-items.active{
+    background-color: #23ADAD;
+    color:white;
+}
+.paginating-items-next{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0.1rem solid black;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color:black;
+}

@@ -7,6 +7,7 @@ import Register from "../auth/Register";
 import CardDetail from "../cardDetail/CardDetail";
 import DefaultLayout from "../components/defaultlayout/DefaultLayout";
 import Home from "../home/Home";
+import Search from "../searchPage/Search";
 import UserProfile from "../userManager/UserProfile";
 import UserFollow from "../userRead/UserFollow";
 import UserRead from "../userRead/UserRead";
@@ -15,6 +16,11 @@ import MovieWatch from "../watching/MovieWatch";
 export const publicRouter = [
     { element: Register, path: "/register" },
     { element: Login, path: "/login" },
+    {
+        element: Search,
+        path: "/tim-kiem",
+        defaultlayout: DefaultLayout,
+    },
     { element: ForgotPassword, path: "/forgot_password" },
     {
         element: ChangePassword,
