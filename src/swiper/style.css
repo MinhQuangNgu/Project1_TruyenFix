@@ -1,0 +1,72 @@
+.swiper_card_container{
+    width: 100%;
+    min-height: 23rem;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.swiper_card_wrap > img{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+    transition: all ease 0.15s;
+}
+.swiper_card_wrap > img:hover{
+    transform: scale(1.13);
+}
+.swiper_card-infor_container{
+    position: absolute;
+    top:77%;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    padding:0.5rem 0.7rem;
+}
+.swiper_card-infor_title{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 450;
+    margin-bottom:0.3rem;
+}
+.swiper_card-infor_detail{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper_text_container{
+    text-decoration: none;
+}
+.swiper_card-infor_chapter{
+    color:white;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.15rem;
+}
+.swiper_card-infor_star{
+    color:#FF8A08;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    margin-left: 1rem;
+}
+.swiper_card-infor_rating{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+}

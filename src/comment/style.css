@@ -1,0 +1,219 @@
+.comment_container{
+    width: 100%;
+    padding:1rem;
+}
+.comment_title{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    color:#FF8A08;
+}
+.comment_form{
+    margin-top: 1rem;
+    padding:0 1.5rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.comment_items{
+    margin-top: 1rem;
+    padding:0 1rem;
+}
+.comment_card_container{
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.comment_card_image{
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.comment_card_image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.comment_detail_wrap{
+    width: calc(100% - 6rem);
+    margin-left: 1rem;
+}
+.comment_detail_container{
+    width:100%;
+    background-color: #EBEBEB;
+    border-radius:0.5rem;
+    padding:0.7rem;
+    padding-bottom: 1.2rem;
+    min-height: 10rem;
+}
+.comment_detail_infor{
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    padding:0.5rem 0;
+}
+.comment_detail_infor > h3{
+    margin-right: 1rem;
+    font-family: cursive;
+}
+.comment_detail_infor > i{
+    margin-top: 0.2rem;
+}
+.comment_detail_infor_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid rgba(0,0,0,0.5);
+}
+.comment_detail_clearly{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-family: 'EB Garamond', serif;
+    line-height: 2.5rem;
+
+}
+.comment_detail_clearly > span{
+    color:#56CCF2;
+    margin-right: 0.2rem;
+    font-weight: 700;
+}
+.comment_navbar_container{
+    display: flex;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+}
+.comment_navbar-like{
+    margin-right: 1.5rem;
+    color:#56CCF2;
+}
+.comment_navbar-reply{
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.reply_container{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.comment_send{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reply_container > button{
+    width: 7rem;
+    height: 3.5rem;
+    cursor: pointer;
+    float:right;
+    background-color: #56CCF2;
+    border: 0.1rem solid white;
+    color:white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.reply_container > button:hover{
+    transform: scale(1.07);
+}
+.comment_send_button > button{
+    padding:0.8rem 2.5rem;
+    cursor: pointer;
+    color:white;
+    background-color: #56CCF2;
+    border:0.1rem solid white;
+    border-radius: 0.5rem;
+}
+.comment_send_button > button:hover{
+    transform: scale(1.1);
+}
+.comment_send_button{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.comment_edit{
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    position: relative;
+}
+.comment_edit_container{
+    position: absolute;
+    top:110%;
+    right:-2rem;
+    width: 9rem;
+    background-color: white;
+    box-shadow:  0 0 0.2rem 0.1rem rgba(0,0,0,0.5);
+    padding:0.5rem;
+    border-radius: 0.4rem;
+}
+.comment_edit_items{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.05rem solid rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.comment_edit_items:last-child{
+    border-bottom: none;
+}
+.comment_edit_items:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.reply_card_container{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    position: relative;
+}
+.icons_chane:active{
+    transform: translateY(-0.4rem);
+}
+
+.update_button_container > button{
+    margin-left: 1rem;
+    padding:0 1rem;
+    height: 3rem;
+    background-color: #56CCF2;
+    color:white;
+    border: 0.1rem solid white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.update_button_container > button:hover{
+    transform: scale(.9);
+}
+#commentContent,
+#commentContentReply{
+    min-height: 10rem;
+    border:0.1rem solid rgba(0,0,0,0.3);
+    padding:1rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+.comment_title_input{
+    position: absolute;
+    top:1rem;
+    left:2.5rem;
+    font-size: 1.6rem;
+    color:rgba(0,0,0,0.5);
+}
+.comment_form_reply{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1rem;
+}
+.comment_title_input_reply{
+    position: absolute;
+    top:1rem;
+    left:2rem;
+    font-size: 1.6rem;
+    color:rgba(0,0,0,0.5);
+}

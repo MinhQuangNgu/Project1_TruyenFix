@@ -1,0 +1,135 @@
+.user_profile_container{
+    min-height: 100vh;
+}
+.user_profile_wrap{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user_profile{
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 1rem 0.2rem rgba(0,0,0,0.5);
+    border-radius: 2rem;
+    padding:2rem 1rem;
+}
+.user_title{
+    width: 100%;
+    text-align:center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.user_detail{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.user_detail_img{
+    width: 40%;
+    display: flex;
+    height: 14rem;
+    justify-content: end;
+    position: relative;
+}
+.user_detail_img > img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.user_detail_small{
+    width: 55%;
+    padding-left: 3%;
+}
+.user_detail_small_wrap{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 1rem;
+}
+.user_detail_small_wrap > span{
+    margin-left: 0.5rem;
+}
+.dropImage{
+    position: absolute;
+    right:0;
+    left:50%;
+    top:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color:white;
+}
+@media screen and (max-width:1023px) {
+    .user_profile{
+        width: 90%;
+        overflow:hidden;
+    }
+    .user_detail_img{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .user_detail_small{
+        width: 100%;
+        text-align: center;
+        text-overflow: ellipsis;
+    }
+    .dropImage{
+        position: absolute;
+        right:25%;
+        left:25%;
+        top:0;
+        bottom:0;
+        background-color: rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color:white;
+    }
+    .user_profile_container{
+        padding:0 1rem;
+    }
+}
+.user_detail_small_wrap > button{
+    padding:0.7rem 1rem;
+    background-color: #56CCF2;
+    border:0.1rem solid white;
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+.user_detail_small_wrap > button:hover{
+    background-color: #FF8A08;
+}
+.second_buton{
+    margin-left: 0.5rem;
+}
+.user_manager_reading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+.user_linethrough{
+    margin:0 0.5rem;
+}
+.user_manager_reading > span{
+    cursor: pointer;
+}
+.user_manager_reading > span.active{
+    color:#56CCF2;
+    text-decoration: underline;
+}
+.user_card_manager{
+    width: 100%;
+    margin-top: 5rem;
+}

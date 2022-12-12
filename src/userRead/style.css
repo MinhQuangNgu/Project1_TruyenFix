@@ -1,0 +1,18 @@
+.user_follow_title{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color:rgb(86,204,242);
+}
+.user_follow_card{
+    margin-top: 4rem;
+}
+
+@media screen and (max-width:1023px) {
+    .user_follow_wrap{
+        padding:0 1rem;
+    }
+}
+.user_follow_wrap{
+    min-height: 100vh;
+}

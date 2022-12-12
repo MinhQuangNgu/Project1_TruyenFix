@@ -1,0 +1,89 @@
+.card_container{
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(0,0,0,0.4);
+    padding-bottom: 0.4rem;
+}
+.card_image_container{
+    width: 100%;
+    position: relative;
+    height: 22rem;
+    overflow: hidden;
+}
+.card_image_container > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(0,0,0,0.1);
+    transition: all ease 0.15s;
+}
+.card_image_container > img:hover{
+    transform: scale(1.13);
+}
+.card_image_infor{
+    position: absolute;
+    top:88%;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    color:white;
+}
+.card_image_infor_watch{
+    margin-right: 1rem;
+}
+.card_image_infor_rating{
+    position: relative;
+    color:#FF8A08;
+    width: auto;
+}
+.card_image_infor_rating-lights{
+    position: absolute;
+    top:0;
+    left:0;
+    width: auto;
+}
+.card_infor{
+    margin-top: 0.5rem;
+    padding:0 1rem;
+}
+.card_infor_title{
+    text-align: center;
+    color:black;
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.card_infor_title_wrap{
+    text-decoration: none;
+}
+.card_infor_chapter_detail{
+    margin-top: 0.5rem;
+    text-align: center;
+    color:black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.update_time_container{
+    position: absolute;
+    top: 2%;
+    left:2%;
+    padding:0.5rem 0.7rem;
+    background-color: #56CCF2;
+    color:white;
+    box-shadow: 0 0 0.1rem 0.1rem rgba(0,0,0,0.1);
+    border-radius: 2rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding-bottom: 0.6rem;
+    text-transform: capitalize;
+}

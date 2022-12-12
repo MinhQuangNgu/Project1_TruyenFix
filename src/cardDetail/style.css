@@ -1,0 +1,207 @@
+.card_Detail_wrap{
+    margin-top: 2rem;
+    background-color: white;
+    min-height: 100rem;
+    border-radius: 1rem;
+    padding:2rem;
+}
+.card_Detail_navbar_container{
+    display: flex;
+    font-size: 1.6rem;
+}
+.card_Detail_navbar_container > span{
+    margin:0 0.5rem;
+}
+.card_Detail_navbar_link{
+    text-decoration: none;
+    color:rgba(0,0,0,0.8);
+    font-family: 'Lora', serif;
+}
+.card_Detail_title{
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Domine', serif;
+    font-size: 2rem;
+}
+
+.card_Detail_infor_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    align-items: center;
+}
+.card_Detail_infor-img{
+    margin-right: 2rem;
+    height: 27rem;
+    max-width: 40%;
+    overflow: hidden;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0,0,0,0.8);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+.card_Detail_infor-img > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card_Detail_infor-detail{
+    max-width: 60%;
+    font-family: 'Old Standard TT', serif;
+}
+.card_Detail_infor-detail > h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.card_Detail_infor-detail-items{
+    list-style: none;
+}
+.card_Detail_infor-detail-items > li{
+    margin:1rem 0;
+    font-size: 2.2rem;
+    display: flex;
+}
+.card_Detail_infor-detail-items > li > div{
+    min-width: 17rem;
+}
+
+/* @media only screen and (min-width:740px) and (max-width:1023px){
+    .card_Detail_infor-img{
+        width: 30rem;
+    }
+} */
+
+.card_Detail_kinds_container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:0 20%;
+}
+.card_Detail_kinds_items{
+    padding:0 2rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0.1rem solid #FF8A08;
+    color:#FF8A08;
+    font-size: 1.7rem;
+    border-radius:3rem;
+    padding-bottom: 0.2rem;
+    margin:0 0.5rem;
+    margin-bottom: 2rem;
+}
+.card_Detail_kinds_items:hover{
+    background-color: #FF8A08;
+    color:white;
+}
+.card_Detail_button_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card_Detail_button-items{
+    padding:0 2rem;
+    height: 5rem;
+    margin:0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    color:white;
+    padding-bottom: 0.2rem;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+.card_Detail_infor_rating{
+    font-size: 1.8rem;
+    color:#FF8A08;
+}
+@media only screen and (max-width:739px){
+    .card_Detail_title{
+        font-size: 1.2rem;
+    }
+    .card_Detail_infor-img{
+        max-width: 100%;
+    }
+    .card_Detail_infor-detail{
+        max-width: 100%;
+    }
+    .card_Detail_infor-detail > h1{
+        text-align: center;
+    }
+    .card_Detail_kinds_container{
+        padding:0;
+    }
+    .card_Detail_infor_rating{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+}
+.card_Detail_button-items:hover{
+    transform: scale(0.9);
+}
+.card_Detail_content{
+    margin-top: 2rem;
+}
+.card_Detail_content_title{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color:#FF8A08;
+    display: flex;
+    align-items: center;
+}
+.card_Detail_content > span{
+    font-size: 1.7rem;
+    word-spacing: 0.6rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2.2rem;
+}
+.card_Detail_chapter_container{
+    margin-top: 2rem;
+}
+.card_Detail_chapter_title{
+    color:#FF8A08;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.card_Detail_chapter_lists{
+    padding:1rem;
+    border:0.1rem solid rgba(0,0,0,0.2);
+    height: 50rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.card_Detail_chapter_items{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    border-bottom: 0.1rem solid rgba(0,0,0,0.2);
+    margin:0 1rem;
+    font-size: 1.5rem;
+    padding:0 0.5rem;
+}
+.card_Detail_chapter_items_Links{
+    text-decoration: none;
+    color:#56CCF2;
+    font-weight: 500;
+}
+.card_Detail_chapter_items_Links:hover{
+    color:#FF8A08;
+}
+.card_Detail_comment{
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.card_Detail_chapter_items_Links.active{
+    color:rgba(0,0,0,0.6);
+}
